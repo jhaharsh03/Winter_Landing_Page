@@ -15,8 +15,7 @@ const Billing = () => {
 
       <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
-      We knew to be done is good, <br className='sm: blockhidden'/>but sharing our experiences
-      <br className='sm: blockhidden'/> and it “works” is way better.
+      Transform your online presence with expert advice for a website that truly captivates.
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
       Our expert team of designers, developers, illustrators and project managers work with streamlined processes to break through organizational roadblocks. We translate research into solutions, 

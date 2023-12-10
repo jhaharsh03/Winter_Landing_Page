@@ -37,7 +37,7 @@ const Hero = () => {
         </h1>
 
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        A creative agency that crafting a digital experience.
+        An innovative agency dedicated to sculpting captivating digital experiences.
         </p>
       </div>
 

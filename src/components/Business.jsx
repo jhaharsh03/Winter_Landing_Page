@@ -27,12 +27,11 @@ const Business = () => {
     <section id='features' className='{layout.section}'>
       <div className={layout.sectionInfo}>
         <h2 className={styles.heading2}>
-        Our clients are companies, brands, and startups <br className='sm: blockhidden' />that keep the world going around.
+        Our valued clients encompass a diverse array of<br className='sm: blockhidden' />companies, brands, and startups
 
         </h2>
         <p className={`${styles.paragraph} max-w-[1000px] mt-5`}>
-        They treat diseases, move parcels, insure cars, process payments, create jobs, rent homes and publish news. They are vast and complex businesses 
-        requiring design experiences that are just as people-friendly as they are, robust and scalable.
+        They are are the driving force behind the perpetual motion of our global landscape. Each of them contributes uniquely to shaping industries, fostering innovation, and making a lasting impact on the ever-evolving world stage. Together, we embark on creative journeys to amplify their stories and elevate their presence in the dynamic tapestry of today's business ecosystem.
         </p>
         
         <Button styles="mt-10"/>

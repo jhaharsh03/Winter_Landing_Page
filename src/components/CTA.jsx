@@ -11,7 +11,7 @@ const CTA = () => {
         Let’s try our service now!
         </h2>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        Everything you need to accept card payments and grow your business anywhere on the planet.
+        Gain a head start in your business with our services, and rest assured, the decision won't be one you regret.
         </p>
       </div>
       <div className={`${styles.flexCenter} sm:ml-10 ml-0 sm:mt-0 mt-10`}>

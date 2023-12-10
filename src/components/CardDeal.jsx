@@ -10,11 +10,11 @@ const CardDeal = () => {
     <section className={layout.section}>
       <div className={layout.sectionInfo}> 
         <h2 className={styles.heading2}>
-        Don’t be surprised at how stunning <br className='sm:blockhidden'/> your project is once you have decided
+        
+    Prepare to be pleasantly astonished by the <br className='sm:blockhidden'/> breathtaking beauty of your project.
         </h2>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        One of the most important pieces of the great product experience is you. A creative agency that crafting a digital experience.
-        Agency with incredible design and development expertise. Based in Yogyakarta, India
+        We view our clients as the very essence of our success, dedicating our utmost efforts to deliver a website tailored to perfection for you and your business, ensuring a symbiotic journey towards excellence.
 
         </p>
       

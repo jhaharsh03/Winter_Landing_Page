@@ -23,6 +23,21 @@ import twitter from "./twitter.svg";
 import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
+import Logo from "./Logo.svg";
+import Logo1 from "./Logo1.svg";
+
+import Business from "./Business.jpg";
+import Discuss from "./Discuss.jpg";
+import Heroi from "./Heroi.jpg";
+import Man from "./Man.svg";
+import Women from "./Women.svg";
+import Laptopi from "./Laptopi.svg";
+import menwomen from "./menwomen.svg";
+import one from "./one.svg";
+import two from "./two.svg";
+
+
+
 
 export {
   airbnb,
@@ -50,4 +65,16 @@ export {
   people01,
   people02,
   people03,
+  Business,
+  Discuss,
+  Heroi,
+  Logo,
+  Logo1,
+
+  Man,
+  Women,
+  Laptopi,
+  menwomen,
+  one, 
+  two,
 };

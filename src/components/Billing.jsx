@@ -1,12 +1,12 @@
 import React from 'react'
-import { apple, bill, google } from '../assets'
+import { apple, bill, google, one } from '../assets'
 import styles, { layout } from '../style'
 
 const Billing = () => {
   return (
     <section id='product' className={layout.sectionImgReverse}>
       <div className={layout.sectionImgReverse}>
-        <img src={bill} alt="billing"  
+        <img src={one} alt="billing"  
         className='w-[100%] h-[100%] relative z-[5]'
         />
         <div className='absolute z-[3] -left-1/2 top-0 w-[50%] h-[50%] rounded-full white__gradient' />
@@ -26,16 +26,16 @@ const Billing = () => {
       that improve the lives of thousands every single day.
       </p>
 
-      <div className='flex flex-row flex-wrap sm:mt-10 mt-6'>
+      {/* <div className='flex flex-row flex-wrap sm:mt-10 mt-6'>
         <img src={apple} alt="apple_store" 
         className='w-[128px] h-[42-px] object-contain mr-5 cursor-pointer'
         />
 
         <img src={google} alt="goole_store" 
         className='w-[128px] h-[42-px] object-contain cursor-pointer'
-        />
+        /> */}
 
-      </div>
+      {/* </div> */}
 
       </div>
 

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { card } from '../assets'
+import { card, two } from '../assets'
 import styles  from '../style'
 import { layout } from '../style'
 import Button from './Button'
@@ -22,7 +22,7 @@ const CardDeal = () => {
       </div>
 
       <div className={layout.sectionImg}>
-        <img src={card} alt="card"
+        <img src={two} alt="card"
         className='w-[100%] h-[100%]'
         />
       </div>

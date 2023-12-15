@@ -8,23 +8,7 @@ const Form = () => {
 
   const form = useRef();
 
-  // const sendEmail = (e) => {
-  //   e.preventDefault();
-
-  //   emailjs
-  //     .sendForm('service_hyxg8o8', 'template_bb2u9ts', form.current, '-nTHyNofpXdNjQAdV')
-  //     .then(
-  //       (result) => {
-  //         console.log(result.text);
-  //       },
-  //       (error) => {
-  //         console.log(error.text);
-  //       }
-  //     );
-
-  //   // Clear the form after submission (optional)
-   
-  // };
+ 
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -46,7 +30,7 @@ const Form = () => {
 
   return (
     <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
-      <div className={`${styles.boxWidth}`}>
+      {/* <div className={`${styles.boxWidth}`}> */}
       <section id='features' className='{layout.section}'>
           <div className={layout.sectionInfo}>
             <h2 className={styles.heading2}>
@@ -117,9 +101,13 @@ const Form = () => {
                 </button>
               </form>
             </div>
+
+            
           </div>
+
+          <div className='sm:hidden' style={{ height: '200px' }}></div>
         </section>
-      </div>
+      
     </div>
   );
 };

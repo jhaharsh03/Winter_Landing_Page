@@ -2,6 +2,7 @@ import React from 'react'
 import styles from '../style'
 import { Logo1 } from '../assets'
 import { footerLinks, socialMedia } from '../constants'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -41,11 +42,16 @@ const Footer = () => {
           2023 Winters&Design. All Rights Reserved
         </p>
         <div className='flex flex-row md:mt-0 mt-6'>
-                {socialMedia.map((social, index) => (
-                  <img key ={social.id} src={social.icon} alt="Icon"
-                  className={`w-[21px] h-[21px] object-contain cursor-pointer ${index !== socialMedia.length-1? 'mr-6':'mr-0'}`}
-                  />
-                ))}
+        {socialMedia.map((social) => (
+        <a key={social.id} href={social.link} target="_blank" rel="noopener noreferrer">
+          {/* Each icon wrapped with an anchor tag */}
+          <img
+            src={social.icon}
+            alt="Social Icon"
+            className="w-[21px] h-[21px] object-contain cursor-pointer mr-6"
+          />
+        </a>
+      ))}
         </div>
       </div>
 

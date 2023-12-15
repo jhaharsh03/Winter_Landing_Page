@@ -53,8 +53,6 @@ We’d love to hear from you. Tell us all the things.<br className='sm: blockhid
 
 </div>
 
-<br />
-<br />
 
 </section> 
      

@@ -5,27 +5,32 @@ import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
 
 const Form = () => {
-  const form = useRef();
-  const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    email: '',
-    grade: '',
-  });
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
-  };
+  const form = useRef();
+
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
+
+  //   emailjs
+  //     .sendForm('service_hyxg8o8', 'template_bb2u9ts', form.current, '-nTHyNofpXdNjQAdV')
+  //     .then(
+  //       (result) => {
+  //         console.log(result.text);
+  //       },
+  //       (error) => {
+  //         console.log(error.text);
+  //       }
+  //     );
+
+  //   // Clear the form after submission (optional)
+   
+  // };
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_hyxg8o8', 'template_bb2u9ts', form.current, '-nTHyNofpXdNjQAdV')
+      .sendForm('service_ktco67p', 'template_fvcuw2q', form.current, '25ARfq7__phcJHFQA')
       .then(
         (result) => {
           console.log(result.text);
@@ -35,19 +40,14 @@ const Form = () => {
         }
       );
 
-    // Clear the form after submission (optional)
-    setFormData({
-      name: '',
-      phone: '',
-      email: '',
-      grade: '',
-    });
+      e.target.reset();
+   
   };
 
   return (
     <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
-        <section id='features' className='{layout.section}'>
+      <section id='features' className='{layout.section}'>
           <div className={layout.sectionInfo}>
             <h2 className={styles.heading2}>
               Let's Connect<br className='sm: blockhidden' />
@@ -64,9 +64,7 @@ const Form = () => {
                   <input
                     type="text"
                     id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleInputChange}
+                    name="user_name"
                     className="mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-blue-500"
                     placeholder="John Doe"
                   />
@@ -79,9 +77,7 @@ const Form = () => {
                   <input
                     type="tel"
                     id="phone"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleInputChange}
+                    name="user_phone"
                     className="mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-blue-500"
                     placeholder="e.g., +1 123-456-7890"
                   />
@@ -94,24 +90,20 @@ const Form = () => {
                   <input
                     type="email"
                     id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleInputChange}
+                    name="user_email"
                     className="mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-blue-500"
                     placeholder="john@example.com"
                   />
                 </div>
 
                 <div className="mb-4">
-                  <label htmlFor="grade" className="block text-sm font-medium text-white">
+                  <label htmlFor="company" className="block text-sm font-medium text-white">
                     Company Name
                   </label>
                   <input
                     type="text"
                     id="grade"
-                    name="grade"
-                    value={formData.grade}
-                    onChange={handleInputChange}
+                    name="user_company"
                     className="mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-blue-500"
                     placeholder="e.g., ABC Inc."
                   />

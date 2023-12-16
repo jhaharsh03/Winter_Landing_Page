@@ -71,21 +71,21 @@ export const feedback = [
 ];
 
 export const stats = [
-  {
-    id: "stats-1",
-    title: "Capital raised",
-    value: "$3800",
-  },
+  // {
+  //   id: "stats-1",
+  //   title: "Capital raised",
+  //   value: "$3800",
+  // },
   {
     id: "stats-2",
     title: "Trusted by Company",
     value: "20+",
   },
-  {
-    id: "stats-3",
-    title: "Acquisitions",
-    value: "30+",
-  },
+  // {
+  //   id: "stats-3",
+  //   title: "Acquisitions",
+  //   value: "30+",
+  // },
 ];
 
 export const footerLinks = [
